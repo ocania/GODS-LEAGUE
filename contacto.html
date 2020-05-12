@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="icon/mano.png">
+    <!--ESTILOS-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contacto.css">
+    <!--FUENTES-->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <!--CSS ANIMADO-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+    <!--MENU-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/headroom.min.js"></script>
+    <script src="js/menu.js"></script>
+    <title>GODS LEAGUE</title>
+</head>
+<body>
+    <header id="header">
+        <nav class="menu">
+            <div class="logo">
+                <a href="index.html"> <img src="img/godsleague.png" alt="godsleague"></a>
+                <a href="#" class="botonmenu" id="botonmenu"><i class=" icono fas fa-bars"></i></a>
+            </div>
+
+            <div class="paginas" id="paginas">
+                <a href="index.html">INICIO</a>
+                <a href="#">COMPETICIONES</a>
+                <a href="contacto.html">CONTACTO</a>
+                <a href="#">FAQ</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="contacto">
+        <h1 class="titulo">Contacta con nosotros</h1>
+        <div class="contenido">
+            <div class="formulario">
+                <form action="">
+                    <p>
+                        <label for="nombre">Nombre completo</label>
+                        <input type="text" name="Nombre Completo" maxlength="40" required>
+                    </p>
+                    <p>
+                        <label for="mail">Correo electrónico</label>
+                        <input type="email" required>
+                    </p>
+                    <p class="block">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea name="mensaje" rows="3" required></textarea>
+                    </p>
+                    <p class="block">
+                        <button type="submit">
+                            Enviar
+                        </button>
+                    </p>
+
+                </form>
+            </div>
+            <div class="info">
+                <p class="texto">Puede realizar cualquier consulta usando este formulario o también puede hacerlo
+                    con la información que le detallamos aquí debajo.
+                </p>
+                <h3>Nuestros datos</h3>
+                <ul>
+                    <li><i class="far fa-envelope"></i>contacto@godsleague.com</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Carrer de la Batllòria</li>
+                    <li><i class="fas fa-phone-alt"></i>933 333 399</li>
+                </ul>
+                <p class="gods">
+                    GODS LEAGUE
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer">
+            GODS LEAGUE
+        </div>
+    </footer>
+
+
+    <!--Google Analytics-->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-165979497-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-165979497-1');
+    </script>
+</body>
+</html>

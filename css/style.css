@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    font-family: 'Nunito', sans-serif;
+    padding-top: 100px;
+}
+
+header {
+    position: fixed;
+    background: black;
+    width: 100%;
+    top: 0%;
+    z-index: 100;
+}
+
+.menu {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+}
+
+.menu .logo{
+    display: inline-block;
+    margin-right: 1em;
+}
+
+.menu .logo img {
+    vertical-align: top;
+    height: 100px;
+    width: 100px;
+    margin-left: auto;
+}
+
+.menu .botonmenu {
+    display: none;
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.menu .paginas {
+    display: inline-block;
+    text-align: right;
+}
+
+.menu .paginas a{
+    color:white;
+    padding: 1em;
+    text-decoration: none;
+    text-align: center;
+}
+
+.menu .paginas a:hover{
+    color:yellow;
+}
+
+/* EFECTOS DEL MENU*/
+.headroom {
+    transition: transform .3s ease;
+}
+
+.headroom--pinned {
+    transform: translateY(0%);
+}
+
+.headroom--unpinned {
+    transform: translateY(-100%);
+}
+/* --- */
+
+.banner{
+    position: relative;
+    width: 100%;
+    top: 0px;
+    height: 600px;
+    background: url(../img/estadio.png) no-repeat center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color:white;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+}
+
+.banner h2{
+    font-size: 50px;
+}
+
+.pt{
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+
+footer{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: auto;
+    background-color: black;
+    margin-top: 5em;
+    bottom: 0px;
+}
+
+.footer{
+    display: flex;
+    max-width: 1200px;
+    background-color: black;
+    color: white;
+    bottom: 0px;
+}
+
+/* media queries*/
+@media screen and (max-width: 768px) {
+    header .menu {
+        flex-direction: column;
+    }
+    
+    header .menu .logo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 90%;
+        padding: 1em;
+    }
+    
+    header .menu .botonmenu{
+        display: inline-block;
+        color: yellow;
+        text-decoration: none;
+        font-size: 1em;
+    }
+    
+    header .menu .paginas {
+        width: 100%;
+        display: flex;
+        flex-direction:  column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .banner{
+        top: 0px;
+        width: 100%;
+        height: 40vh;
+        background-size: cover;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .banner h2{
+        font-size: 40px;
+    }
+}

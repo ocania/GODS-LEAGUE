@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+body {
+    background: url(../img/estadio.png) no-repeat center top;
+    background-size: cover;
+    height: 100vh;
+    font-size: 16px;
+    font-family: 'Nunito', sans-serif;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.caja{
+    width: 300px;
+    padding: 1em;
+    background-color:  black;
+    text-align: center;
+    border-radius: 25px;
+    box-shadow: 2px 2px 10px black;
+    color: white;
+}
+h1{
+    color: yellow;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.caja label{
+    display: block;
+}
+
+.caja input{
+    width:80%;
+    margin-bottom: 20px;
+}
+.caja input[type="text"],
+.caja input[type="password"]{
+    border: none;
+    border-bottom: 1px solid yellow;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: white;
+}
+.caja input[type="submit"]{
+    border-radius: 25px;
+    outline: none;
+    width: 40%;
+    height: 40px;
+    background: yellow;
+    color: black;
+}
+
+.caja input[type="submit"]:hover{
+    border-radius: 25px;
+    outline: none;
+    width: 40%;
+    height: 40px;
+    background: none;
+    color: white;
+    border: solid 2px yellow;
+}
