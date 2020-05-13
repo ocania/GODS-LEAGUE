@@ -31,7 +31,7 @@
                 <a href="index.html">INICIO</a>
                 <a href="#">COMPETICIONES</a>
                 <a href="contacto.html">CONTACTO</a>
-                <a href="#">FAQ</a>
+                <a href="faq.html">FAQ</a>
             </div>
         </nav>
     </header>
@@ -40,18 +40,18 @@
         <h1 class="titulo">Contacta con nosotros</h1>
         <div class="contenido">
             <div class="formulario">
-                <form action="">
+                <form action="#" method="POST">
                     <p>
-                        <label for="nombre">Nombre completo</label>
-                        <input type="text" name="Nombre Completo" maxlength="40" required>
+                        <label for="nombre">Nombre</label>
+                        <input type="text" name="nombre" maxlength="40"  placeholder="Nombre completo" required>
                     </p>
                     <p>
                         <label for="mail">Correo electrónico</label>
-                        <input type="email" required>
+                        <input type="email" placeholder="email@email.com" required>
                     </p>
                     <p class="block">
                         <label for="mensaje">Mensaje</label>
-                        <textarea name="mensaje" rows="3" required></textarea>
+                        <textarea name="mensaje" rows="3" placeholder="Mensaje..." required></textarea>
                     </p>
                     <p class="block">
                         <button type="submit">
@@ -83,7 +83,6 @@
             GODS LEAGUE
         </div>
     </footer>
-
 
     <!--Google Analytics-->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-165979497-1"></script>
