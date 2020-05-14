@@ -71,6 +71,7 @@ body{
 .formulario form button:hover{
     background-color: yellow;
     transition: background-color 1s ease-out;
+    cursor: pointer;
 }
 
 .info  {
