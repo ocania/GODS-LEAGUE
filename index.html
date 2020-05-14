@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="icon/mano.png">
+    <meta name="Gods League">
+    <meta name="description" content="Gods League es una organización dedicada a la creación de eventos deportivos amateurs dentro del sector de los eSports.">
+    <meta name="keywords" content="Gods League, godsleague, gods league, Gods League, videojuegos, torneos de videojuegos, ligas de videojuegos, Valorant, valorant, League of Legends, lol, Counter Strike:Global Offensive, CSGO">
     <!--ESTILOS-->
     <link rel="stylesheet" href="css/style.css">
     <!--FUENTES-->
@@ -14,7 +17,7 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/headroom.min.js"></script>
     <script src="js/menu.js"></script>
-    <title>GODS LEAGUE</title>
+    <title>Gods League</title>
 </head>
 <body>
     <header id="header">
@@ -26,7 +29,7 @@
 
             <div class="paginas" id="paginas">
                 <a href="index.html">INICIO</a>
-                <a href="#">COMPETICIONES</a>
+                <a href="competiciones.html">COMPETICIONES</a>
                 <a href="contacto.html">CONTACTO</a>
                 <a href="faq.html">FAQ</a>
             </div>
@@ -38,17 +41,84 @@
         <p>Sientete como te mereces</p>
     </section>    
     <section class="pt">
-        GODS LEAGUE es una organización que realiza torneos y ligas de videojuegos para equipos amateurs.
-        Compite, diviertete y gana premios jugando a tu juego favorito.
+        <div class="ptexto">
+            <p
+            >GODS LEAGUE es una organización dedicada a la creación de eventos deportivos amateurs dentro del sector de los eSports.
+            Tenemos el objetivo de ser una de las organizaciones amateurs con mayor repercusión a nivel nacional.
+            Compite, diviértete y gana premios jugando a tu juego favorito.
+            Crece junto a nosotros.
+            </p>
+        </div>
+        <div class="logo">
+            <img src="img/godsleague.png" alt="logo godsleague">
+        </div>
     </section>
     
+    <section class="redes">
+        <div class="rc">
+            <p>¡Siguenos en nuestras redes sociales!</p>
+            <div class="iconos">
+                <a href="https://www.instagram.com/ocaniaa" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.twitch.tv" target="_blank"><i class="fab fa-twitch"></i></a>
+                <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.youtube.es" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+        
+    </section>
+
 
     <footer>
         <div class="footer">
-            GODS LEAGUE
+            <p>Copyright | GODS LEAGUE | Todos los derechos reservados | <a href="http://politicadecookies.com/cookies.php" target="_blank">Política de Cookies</a></p>
         </div>
     </footer>
 
+        <!-- OOKIES-->
+    <div id="barraaceptacion" style="display: block;">
+        <div class="inner">
+            Solicitamos su permiso para obtener datos estadísticos de su navegación en esta web. Si continúa navegando consideramos que acepta el uso de cookies.
+            <a href="javascript:void(0);" class="ok" onclick="PonerCookie();"><b>Aceptar</b></a> | 
+            <a href="http://politicadecookies.com/cookies.php" target="_blank" class="info">Más información</a>
+        </div>
+    </div>
+ 
+    <script>
+    function getCookie(c_name){
+        var c_value = document.cookie;
+        var c_start = c_value.indexOf(" " + c_name + "=");
+        if (c_start == -1){
+            c_start = c_value.indexOf(c_name + "=");
+        }
+        if (c_start == -1){
+            c_value = null;
+        }else{
+            c_start = c_value.indexOf("=", c_start) + 1;
+            var c_end = c_value.indexOf(";", c_start);
+            if (c_end == -1){
+                c_end = c_value.length;
+            }
+            c_value = unescape(c_value.substring(c_start,c_end));
+    }
+    return c_value;
+    }
+ 
+    function setCookie(c_name,value,exdays){
+        var exdate=new Date();
+        exdate.setDate(exdate.getDate() + exdays);
+        var c_value=escape(value) + ((exdays==null) ? "" : "; expires="+exdate.toUTCString());
+        document.cookie=c_name + "=" + c_value;
+    }
+ 
+    if(getCookie('tiendaaviso')!="1"){
+        document.getElementById("barraaceptacion").style.display="block";
+    }
+    function PonerCookie(){
+        setCookie('tiendaaviso','1',365);
+        document.getElementById("barraaceptacion").style.display="none";
+    }
+    </script>
+    <!--FIN COOKIES-->
 
     <!--SCROLL REVEAL-->
     <script src="https://unpkg.com/scrollreveal"></script>
