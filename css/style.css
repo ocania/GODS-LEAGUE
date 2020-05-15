@@ -251,8 +251,8 @@ footer{
     width: 100%;
     height: auto;
     background-color: black;
-    bottom: 0px;
     justify-content: center;
+    align-self: flex-end;
 }
 
 .footer{

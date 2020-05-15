@@ -12,6 +12,7 @@ body{
     flex-wrap: wrap;
     justify-content: center;
     background-color: #1c242e;
+    min-height: 100vh;
 }
 
 .contacto{

@@ -7,15 +7,20 @@
 }
 
 body {
+    display: flex;
+    flex-wrap: wrap;
     background-color: #1c242e;
     color: black;
     font-size: 16px;
     font-family: 'Nunito', sans-serif;
     padding-top: 100px;
+    min-height: 100vh;
 }
 #contenedor{
+    width: 100%;
     display: flex;
     justify-content: center;
+    align-content: center;
 }
 
 .grid{
