@@ -11,7 +11,7 @@ body{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: rgb(44, 44, 44);
+    background-color: #1c242e;
 }
 
 .contacto{
@@ -22,6 +22,7 @@ body{
     justify-content: center;
     align-items: center;
     display: grid;
+    margin-bottom: 4em;
 }
 
 .titulo{
@@ -33,7 +34,7 @@ body{
 
 .contenido{
     color: white;
-    background-color: rgb(54, 54, 54);
+    background-color: #303d50;
     box-shadow: 0 0 20px 0 rgba(0 , 0, 0, .5);
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -123,6 +124,7 @@ i{
 .info ul li{
     padding: .3em;
 }
+
 
 @media screen and (max-width:1400px){
     .contacto{
