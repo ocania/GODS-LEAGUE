@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: #1c242e;
+    background-color: rgb(44, 44, 44);
     color: black;
     font-size: 16px;
     font-family: 'Nunito', sans-serif;
@@ -18,6 +18,7 @@ body {
     flex-direction: column;
     align-items: center;
     margin:2em;
+
 }
 
 .primera,
@@ -31,20 +32,21 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    top: 10px;
     margin: 2em;
-    background-color: #303d50;
+    background-color: rgb(54, 54, 54);
     box-shadow: 0 0 20px 0 rgba(0 , 0, 0, .5);
 }
 
 .pregunta{
     display: flex;
     align-items: center;
-    background-color: #F2E205;
+    background-color: yellow;
     height: 40px;
     padding: 1em;
 }
 
-.text{
+p{
     padding: 1em;
     color: white;
 }
