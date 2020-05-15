@@ -7,8 +7,8 @@
 }
 
 body {
-    background-color: white;
-    color: black;
+    background-color: #1c242e;
+    color: white;
     font-size: 16px;
     font-family: 'Nunito', sans-serif;
     padding-top: 100px;
@@ -95,7 +95,7 @@ header {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    color:white;
+    color:#F2E205;
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
 }
@@ -128,22 +128,17 @@ header {
 .logo img{
     position: relative;
     display: flex;
-    margin-left: auto;
-    margin-right: auto;
     width: 400px;
     height: 400px;
-    margin-left: auto;
-    align-self: center;
 }
 
 .redes{
     position: relative;
     display: flex;
-    background-color: yellow;
     justify-content: center;
     align-items: center;
-    margin-top: 1em;
-    box-shadow: 0px 0  10px 0px rgba(0 , 0, 0, .3);
+    padding: 4em;
+    color: #F2E205;
 }
 
 .rc{
@@ -153,6 +148,7 @@ header {
     margin: 1em;
     text-align: center;
     justify-content: center;
+    padding: 1em;
 }
 
 .iconos{
@@ -163,11 +159,11 @@ header {
 .redes .rc .iconos a{
     font-size: 30px;
     margin: 1em;
-    color: black;
+    color: white;
 }
 
 .redes .rc .iconos a:hover{
-    color: red;
+    color: #F2E205;
     transition: 0.3s;
 }
 
@@ -177,14 +173,84 @@ header {
     font-size: 40px;
     flex-direction: column;
 }
+/* PATROCINADORES */
+.sponsors{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F2E205;
+    box-shadow: 0px 0  30px 0px rgba(0 , 0, 0, .9);
+    padding: 1em;
+    font-family: 'Oswald', sans-serif;
+}
 
+.stext{
+    width: 100%;
+    font-size: 50px;
+    text-align: center;
+    margin: 0.5em 0em 0em 0em;
+    color: #1c242e;
+    font-weight: bold;
+}
+
+.content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 80%;
+    justify-items: center;
+    padding: 1em;
+}
+
+.nike{
+    width: 200px;
+    height: 200px;
+    background: url(../img/nike.png) no-repeat center;
+    background-size: 100%;
+}
+
+.intel{
+    width: 200px;
+    height: 200px;
+    background: url(../img/intel.png) no-repeat center;
+    background-size: 100%;
+}
+
+.asus{
+    width: 200px;
+    height: 200px;
+    background: url(../img/asus.png) no-repeat center;
+    background-size: 100%;
+}
+
+.instant{
+    width: 200px;
+    height: 200px;
+    background: url(../img/instant.png) no-repeat center;
+    background-size: 100%;
+}
+
+.aerocool{
+    width: 200px;
+    height: 200px;
+    background: url(../img/aerocool.png) no-repeat center;
+    background-size: 100%;
+}
+
+.msi{
+    width: 200px;
+    height: 200px;
+    background: url(../img/msi.png) no-repeat center;
+    background-size: 60%;
+}
+/*---*/
 footer{
     position: relative;
     display: flex;
     width: 100%;
-    height: 60px;
+    height: auto;
     background-color: black;
-    margin-top: 4em;
     bottom: 0px;
     justify-content: center;
 }
@@ -192,15 +258,19 @@ footer{
 .footer{
     display: flex;
     max-width: 1200px;
+    height: auto;
     background-color: black;
     color: white;
     align-items: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    margin: 1em;
 }
 .footer a{
     color: white;
     text-decoration: none;
+}
+
+.ftext{
+    margin:0em 1em 0em 1em;
 }
 
 .footer a:hover{
@@ -260,6 +330,10 @@ footer{
     }
     #barraaceptacion {
         height: 40px;
+    }
+
+    .content{
+        grid-template-columns: 1fr 1fr;
     }
 }
 
@@ -326,6 +400,12 @@ footer{
     .pt .ptexto p{
         font-size: 16px;
     }
+
+    .logo img{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     .redes .rc p{
         font-size: 30px;
     }
@@ -333,6 +413,23 @@ footer{
     .redes .rc .iconos a{
         font-size: 30px;
         margin: 0.5em;
-        color: black;
     }
+
+    .stext{
+        margin-bottom: 0em;
+    }
+
+    .content{
+        grid-template-columns: 1fr;
+    }
+
+    .redes{
+        padding: 0em;
+    }
+
+    .footer{
+        display: flex;
+        flex-direction: column;
+    }
+
 }
