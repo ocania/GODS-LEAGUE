@@ -74,4 +74,9 @@ body {
     .pregunta{
         height: 60px;
     }
+
+    #pregunta6{
+        height: 80px;
+    }
+
 }
